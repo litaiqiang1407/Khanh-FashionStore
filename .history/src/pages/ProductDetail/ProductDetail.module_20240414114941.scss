@@ -1,0 +1,49 @@
+@import "~bootstrap/scss/bootstrap";
+
+.product-detail {
+  padding: 0;
+
+  .product-detail__container {
+    padding: 0;
+
+    .product-image__container {
+      padding: 0 120px;
+
+      .product-image {
+        width: 420px;
+        height: 560px;
+      }
+    }
+
+    .product-info {
+      padding: 0;
+
+      .product-brand {
+        font-size: 2.4rem;
+        color: var(--primary-text-color);
+        font-weight: 600;
+      }
+
+      .product-name {
+        font-size: 2rem;
+        color: var(--primary-text-color);
+        margin: 6px 0 12px;
+      }
+
+      .product-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--border-color);
+        padding: 8px;
+        width: 200px;
+
+        .rating-value {
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+
+.form-container {
+  margin: 0 auto;
+  padding: 24px 36px;
+  width: 400px;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  .form-title {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+    .form-label {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+  }
+}

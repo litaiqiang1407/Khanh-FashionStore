@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+
+.product-detail {
+  padding: 0;
+
+  .product-detail__container {
+    padding: 0;
+
+    .product-image__container {
+      padding: 0;
+
+      .product-image {
+      }
+    }
+
+    .product-info {
+      padding: 0;
+    }
+  }
+}

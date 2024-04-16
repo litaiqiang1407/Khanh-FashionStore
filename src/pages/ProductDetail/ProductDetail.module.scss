@@ -1,0 +1,178 @@
+@import "~bootstrap/scss/bootstrap";
+
+.product-detail {
+  padding: 0;
+
+  .product-detail__container {
+    padding: 0;
+
+    .product-image__container {
+      padding: 0 120px;
+
+      .product-image {
+        width: 420px;
+        height: 560px;
+      }
+    }
+
+    .product-info {
+      padding: 0;
+
+      .product-brand {
+        font-size: 2.4rem;
+        color: var(--primary-text-color);
+        font-weight: 600;
+      }
+
+      .product-name {
+        font-size: 2rem;
+        color: var(--primary-text-color);
+        margin: 6px 0 12px;
+        font-weight: 400;
+      }
+
+      .product-rating {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--primary-border-color);
+        padding: 4px 8px;
+        max-width: 204px;
+
+        .rating-value {
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+          font-weight: 600;
+        }
+
+        .rating-icon {
+          margin-left: 8px;
+          color: var(--primary-color);
+          font-size: 1.4rem;
+        }
+
+        .rating-number {
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+          padding-left: 8px;
+          margin-left: 8px;
+          border-left: 2px solid var(--primary-border-color);
+        }
+      }
+
+      .price-container {
+        margin-top: 12px;
+        padding-top: 16px;
+        border-top: 1px solid var(--primary-border-color);
+
+        .product-price {
+          font-size: 2.4rem;
+          color: var(--price);
+          font-weight: 600;
+        }
+      }
+
+      .select-size_title {
+        display: block;
+        margin-top: 12px;
+        font-size: 1.6rem;
+        color: var(--primary-text-color);
+        margin-top: 12px;
+        font-weight: 600;
+      }
+
+      .select-size {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+
+        .size {
+          margin-right: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border: 1px solid var(--primary-border-color);
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+          cursor: pointer;
+          border-radius: 999px;
+          font-weight: 600;
+
+          &:hover {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+          }
+        }
+      }
+
+      .product-actions {
+        margin: 20px 0;
+        display: flex;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--primary-border-color);
+
+        .add-to-cart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 52px;
+          background-color: var(--primary-color);
+          color: var(--white);
+          font-size: 1.6rem;
+          font-weight: 600;
+          padding: 0 80px;
+          cursor: pointer;
+          border-radius: 4px;
+          border: 2px solid var(--primary-color);
+
+          &:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+          }
+
+          .cart-icon {
+            margin-right: 8px;
+          }
+        }
+
+        .wishlist {
+          display: flex;
+          align-items: center;
+          height: 52px;
+          background-color: var(--white);
+          color: var(--black);
+          font-size: 1.6rem;
+          font-weight: 600;
+          padding: 0 60px;
+          cursor: pointer;
+          border-radius: 4px;
+          margin-left: 16px;
+          border: 1px solid var(--primary-border-color);
+
+          &:hover {
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+          }
+
+          .wishlist-icon {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .product-description_title {
+        font-size: 1.6rem;
+        color: var(--primary-text-color);
+        font-weight: 600;
+      }
+
+      .product-description {
+        font-size: 1.6rem;
+        color: var(--primary-text-color);
+        margin-top: 12px;
+      }
+    }
+  }
+}

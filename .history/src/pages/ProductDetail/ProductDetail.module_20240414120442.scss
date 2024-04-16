@@ -1,0 +1,113 @@
+@import "~bootstrap/scss/bootstrap";
+
+.product-detail {
+  padding: 0;
+
+  .product-detail__container {
+    padding: 0;
+
+    .product-image__container {
+      padding: 0 120px;
+
+      .product-image {
+        width: 420px;
+        height: 560px;
+      }
+    }
+
+    .product-info {
+      padding: 0;
+
+      .product-brand {
+        font-size: 2.4rem;
+        color: var(--primary-text-color);
+        font-weight: 600;
+      }
+
+      .product-name {
+        font-size: 2rem;
+        color: var(--primary-text-color);
+        margin: 6px 0 12px;
+      }
+
+      .product-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--primary-border-color);
+        padding: 4px 8px;
+        width: 200px;
+
+        .rating-value {
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+          font-weight: 600;
+        }
+
+        .rating-icon {
+          margin-left: 8px;
+          color: var(--primary-color);
+          font-size: 1.4rem;
+        }
+
+        .rating-number {
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 16px;
+            margin-right: 7px;
+            background-color: var(--primary-border-color);
+          }
+        }
+      }
+
+      .price-container {
+        margin-top: 12px;
+        padding-top: 16px;
+        border-top: 1px solid var(--primary-border-color);
+
+        .product-price {
+          font-size: 2.4rem;
+          color: var(--price);
+          font-weight: 600;
+        }
+      }
+
+      .select-size_title {
+        margin-top: 12px;
+        font-size: 1.6rem;
+        color: var(--primary-text-color);
+        margin-top: 24px;
+      }
+
+      .select-size {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+
+        .size {
+          width: 50px;
+          height: 50px;
+          border: 1px solid var(--primary-border-color);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.6rem;
+          color: var(--primary-text-color);
+          cursor: pointer;
+          border-radius: 999px;
+
+          &.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}

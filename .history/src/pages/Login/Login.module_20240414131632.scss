@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
+.form-container {
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  .form-title {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+  }
+}

@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+
+.contact {
+  .contact-header {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .contact-form {
+    width: 660px;
+    border: 2px solid #202020;
+    border-radius: 12px;
+    padding: 40px 80px;
+
+    .form-field {
+      margin-bottom: 20px;
+      .form-label {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .form-input {
+        height: 40px;
+        font-size: 1.4rem;
+        &:focus {
+          color: var(--gray-color);
+          border-color: var(--gray);
+          box-shadow: 0 0 0 0.2rem rgba(71, 71, 71, 0.25);
+        }
+      }
+    }
+
+    .send-btn {
+      width: 160px;
+      height: 40px;
+      float: right;
+      font-size: 1.6rem;
+      border-radius: 4px;
+      margin-top: 20px;
+      color: var(--white);
+      background-color: var(--primary-color);
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "~bootstrap/scss/bootstrap";
+
+.cart {
+  width: 960px;
+  margin: 0 auto;
+
+  .header {
+    margin-bottom: 16px;
+  }
+  .body {
+    padding: 0;
+
+    .product {
+      display: flex;
+      padding: 16px 24;
+      border: 1px solid var(--primary-border-color);
+
+      .product-image {
+        width: 111px;
+        height: 148px;
+        margin-right: 16px;
+      }
+
+      .product-info {
+        flex: 1;
+
+        .product-name {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+
+        .product-price {
+          font-size: 1.4rem;
+          color: var(--primary-color);
+          margin-bottom: 8px;
+        }
+
+        .product-quantity {
+          font-size: 1.4rem;
+          margin-bottom: 8px;
+        }
+
+        .product-actions {
+          display: flex;
+          align-items: center;
+
+          .product-quantity-input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            margin-right: 8px;
+          }
+
+          .product-remove {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

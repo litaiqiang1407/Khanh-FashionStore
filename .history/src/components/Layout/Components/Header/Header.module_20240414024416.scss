@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/bootstrap";
+
+.header {
+  height: 80px;
+
+  .header-container {
+    padding: 0;
+
+    .header-row {
+      padding: 0;
+
+      .header-col {
+        padding: 0;
+
+        .header-logo {
+          padding: 0;
+
+          .logo {
+            height: 80px;
+            width: 80px;
+          }
+        }
+
+        .navbar-header {
+          height: 80px;
+          .nav-link {
+            height: 100%;
+            padding: 0 16px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 80px;
+            color: var(--primary-text-color);
+
+            &:hover {
+              color: var(--primary-color);
+              border-bottom: 4px solid var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

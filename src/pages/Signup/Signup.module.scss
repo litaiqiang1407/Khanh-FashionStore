@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/bootstrap";
+
+.form-container {
+  margin: 0 auto;
+  padding: 24px 36px;
+  width: 400px;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  .form-title {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+    .form-label {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .form-input {
+      height: 40px;
+
+      &:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(255, 27, 103, 0.25);
+      }
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 24px;
+
+    .signup-btn,
+    .login-btn {
+      padding: 8px 16px;
+      font-size: 1.6rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+    }
+
+    .login-btn {
+      background-color: var(--white);
+      color: var(--primary-color);
+      margin-right: 8px;
+      border: 1px solid var(--primary-color);
+
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+    }
+
+    .signup-btn {
+      background-color: var(--primary-color);
+      color: var(--white);
+      border: 1px solid var(--primary-color);
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--primary-color);
+      }
+    }
+  }
+}

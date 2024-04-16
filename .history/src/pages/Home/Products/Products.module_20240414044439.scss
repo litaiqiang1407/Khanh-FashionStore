@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+
+.products {
+  margin-top: 40px;
+
+  .header {
+    display: flex;
+    margin-left: 25px;
+
+    .header-title,
+    .header-count {
+      font-size: 1.6rem;
+    }
+  }
+}

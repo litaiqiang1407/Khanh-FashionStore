@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+
+.products {
+  margin-top: 40px;
+
+  .header {
+    display: flex;
+    margin-left: 25px;
+
+    .header-title {
+      font-size: 1.6rem;
+      color: var(--primary-text-color);
+      margin: 0;
+      line-height: 16px;
+    }
+
+    .header-count {
+      font-size: 1.6rem;
+      color: var(--secondary-text-color);
+      line-height: 16px;
+    }
+  }
+}

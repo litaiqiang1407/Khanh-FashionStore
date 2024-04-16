@@ -1,0 +1,101 @@
+@import "~bootstrap/scss/bootstrap";
+
+.header {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+
+  .header-container {
+    padding: 0;
+
+    .header-row {
+      padding: 0;
+
+      .header-col {
+        padding: 0;
+
+        .header-logo {
+          padding: 0;
+
+          .logo {
+            height: 80px;
+            width: 80px;
+          }
+        }
+
+        .navbar-header {
+          height: 80px;
+          .nav-link {
+            height: 100%;
+            padding: 0 16px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 80px;
+            color: var(--primary-text-color);
+
+            &:hover {
+              color: var(--primary-color);
+              border-bottom: 3px solid var(--primary-color);
+            }
+          }
+        }
+      }
+
+      .header-options {
+        padding: 20px 0;
+        height: 80px;
+
+        .header-search {
+          height: 40px;
+          padding: 12px 10px;
+          display: flex;
+          align-items: center;
+          background-color: var(--gray);
+          border: 1px solid transparent;
+          border-radius: 4px;
+
+          &:focus-within {
+            background-color: var(--white);
+            border: 1px solid var(--primary-color);
+          }
+
+          .search-icon {
+            font-size: 1.6rem;
+            color: var(--secondary-text-color);
+            margin-right: 12px;
+          }
+
+          .search-input {
+            width: 90%;
+            font-size: 1.6rem;
+            color: var(--secondary-text-color);
+            background-color: var(--gray);
+
+            &:focus {
+              background-color: var(--white);
+            }
+          }
+        }
+
+        .header-actions {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .action-icon {
+            margin-left: 32px;
+            font-size: 2rem;
+
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

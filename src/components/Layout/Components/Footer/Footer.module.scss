@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/bootstrap";
+
+.footer {
+  margin-top: 40px;
+  background-color: var(--primary-color);
+  padding: 40px 0;
+
+  .footer-container {
+    margin-top: 40px;
+
+    .footer-title {
+      color: var(--white);
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .footer-list {
+      padding: 0;
+      font-size: 1.4rem;
+      color: var(--white);
+    }
+
+    .footer-item {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.footer-bottom {
+  height: 40px;
+  padding: 0;
+  font-size: 1.4rem;
+  margin-top: 40px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  text-align: center;
+  line-height: 40px;
+}
